@@ -11,6 +11,8 @@ public class MoveObjectRB05 : MonoBehaviour
     {
         moveDirection = new Vector3(-2, 0,0); // Don't change this!
         rigidbody = GetComponent<Rigidbody>();
+
+        //this just works as intended when you uncheck is kinematic... i am confused
     }
 
     // Update is called once per frame
