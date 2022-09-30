@@ -10,18 +10,12 @@ public class MoveObjectRB02 : MonoBehaviour
     void Start()
     {
         // Where does one find a rigidbody these days anyway?
-
-	    rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>(); //idk what this means i just know you need it
     }
 
     // Update is called once per frame
     void Update()
     {
-        rigidbody.AddForce(moveDirection, ForceMode.Force);
-        //i was basing this off of the tutorial you gave in class, which i took pics of
-        //i legitimately have no idea why this isnt working
-        //the red cube doesn't seem to "have" rigidbody, even tho it does
-        //it should be kinematic and responding to gravity
-        //but it just isn't
+        rigidbody.AddForce(moveDirection, ForceMode.Force); //setting the forcemode of the animation
     }
 }
