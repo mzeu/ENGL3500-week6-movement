@@ -18,6 +18,6 @@ public class MoveObject01 : MonoBehaviour
     {
         // My position equals my position PLUS 
 	    // where I want to be by the end of this frame...
-        transform.position = transform.position + Vector3.zero;
+        transform.position = transform.position + Vector3.left; //idk how to hook it up to the moveDirection vector serialized fields but this sure makes it go left
     }
 }
