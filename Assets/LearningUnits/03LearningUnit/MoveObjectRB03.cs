@@ -17,5 +17,8 @@ public class MoveObjectRB03 : MonoBehaviour
     void Update()
     {
         rigidbody.AddForce(moveDirection, ForceMode.Force); // Don't change this!
+
+        //lowered mass of blue cube so it would no longer be an Immovable Object
+
     }
 }
