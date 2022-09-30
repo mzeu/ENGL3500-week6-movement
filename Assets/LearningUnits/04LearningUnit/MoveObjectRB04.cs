@@ -14,7 +14,11 @@ public class MoveObjectRB04 : MonoBehaviour
 
 
         // Don't move this line or add any new values (such as coefficients)!
-        rigidbody.AddForce(moveDirection, ForceMode.Force);
+        rigidbody.AddForce(moveDirection, ForceMode.Impulse);
+
+        //impulse creates short burst, so without even adjusting mass of any cube, this will make burst of movemt
+        //knocking blue cube off edge while barely keeping red on the platform
+
 
         // I just want to give a nudge to the blue cube, but 
 	    // stay on the white plane and not fall over the edge myself...
